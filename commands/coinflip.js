@@ -29,10 +29,10 @@ module.exports = {
 
         if (result === side) {
             description += `\nYou won! 🎉 You earned ${betAmount} cowoncy.`;
-            userData[userId].cowoncy += betAmount;
+            userData[userId].cowoncy + betAmount;
         } else {
             description += `\nYou lost. Better luck next time! 💸 You lost ${betAmount} cowoncy.`;
-            userData[userId].cowoncy -= betAmount;
+            userData[userId].cowoncy - betAmount;
         }
 
         const embed = new MessageEmbed()
